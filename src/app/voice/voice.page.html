@@ -1,8 +1,30 @@
+<ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="back">
+        <ion-back-button defaultHref="/menu"></ion-back-button>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+<ion-content [fullscreen]="true">
+<ion-header collapse="condense">
+  <img src="./assets/lingo-bg1.png" id="lingo">
+</ion-header>
 <ion-content [fullscreen]="true">
  <ion-grid>
   <ion-row>
     <ion-col>
-      <ion-button shape="round" (click)="start()">Speak</ion-button>
+      <ion-button shape="round" (click)="start()" class="speak">Tap to Speak</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img src="./assets/mic.png" class="mic">
     </ion-col>
   </ion-row>
   <ion-row>
