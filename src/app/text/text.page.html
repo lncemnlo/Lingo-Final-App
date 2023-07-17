@@ -1,26 +1,41 @@
 <ion-header>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-back-button defaultHref="/menu"></ion-back-button>
+      <ion-col size="auto">
+        <ion-back-button defaultHref="/menu" text="" class="back" color="dark"></ion-back-button>
       </ion-col>
       <ion-col>
-        <ion-searchbar class="search"></ion-searchbar>
+        <ion-searchbar color="dark" class="search"></ion-searchbar> 
+        <ion-list class="itemsss">
+          <ion-item color="dark" class="align-items-center">
+            <ion-select aria-label="Favorite Fruit" value="apple" justify="start">
+              <ion-select-option value="apple">Words</ion-select-option>
+              <ion-select-option value="banana">Phrases</ion-select-option>
+              <ion-select-option value="orange">All</ion-select-option>
+            </ion-select>
+            <ion-icon name="filter-outline"></ion-icon>
+          </ion-item>
+        </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
+  
 </ion-header>
 <ion-content [fullscreen]="true">
-
-  <ion-list *ngFor="let gif of gifList" class="lit">
-  <ion-item-sliding class="items">
-    <ion-item detail="true" class="itemss">
-    <ion-thumbnail class="ion-margin-end">
-      <ion-img src="{{gif.gifURL}}" aria-setsize="medium"></ion-img>
-    </ion-thumbnail>
-   <ion-label class="lbl">{{gif.gifName}}</ion-label>
-  </ion-item>
-</ion-item-sliding>
-  
-</ion-list>
+  <ion-list-header>
+    <ion-label class="lbl" color="dark">Words</ion-label>
+  </ion-list-header>
+  <ion-accordion-group *ngFor="let gif of gifList" class="items">
+    <ion-accordion value="first" class="itemss">
+      <ion-item slot="header" color="dark">
+        <ion-thumbnail class="ion-margin-end">
+          <ion-img src="{{gif.gifURL}}"></ion-img>
+        </ion-thumbnail>
+        <ion-label class="lbl">{{gif.gifName}}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-img src="{{gif.gifURL}}" aria-setsize="large"></ion-img>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>

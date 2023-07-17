@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class VoicePage implements OnInit {
 
+  vWord:string="Press the button and start speaking";
   words : string = '';
   constructor(private speechRecognition: SpeechRecognition, private router: Router) { }
 
