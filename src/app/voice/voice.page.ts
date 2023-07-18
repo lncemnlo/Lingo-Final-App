@@ -17,7 +17,9 @@ export class VoicePage implements OnInit {
   constructor(private speechRecognition: SpeechRecognition, private router: Router) { }
 
   ngOnInit() {
-
+    this.speechRecognition.isRecognitionAvailable()
+    .then((available: boolean) => console.log(available))
+  
     this.speechRecognition.hasPermission()
     .then((hasPermission: boolean) => {
 

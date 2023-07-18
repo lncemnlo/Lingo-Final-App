@@ -13,7 +13,8 @@ import { VoicePage } from './voice.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    VoicePageRoutingModule
+    VoicePageRoutingModule,
+    
   ],
   declarations: [VoicePage]
 })
