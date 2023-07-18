@@ -8,12 +8,14 @@ import { TextPageRoutingModule } from './text-routing.module';
 
 import { TextPage } from './text.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TextPageRoutingModule
+    TextPageRoutingModule,
+    
   ],
   declarations: [TextPage]
 })

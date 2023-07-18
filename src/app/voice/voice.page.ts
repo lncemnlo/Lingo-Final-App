@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
 import { SpeechRecognition } from '@awesome-cordova-plugins/speech-recognition/ngx';
 import { NavController } from '@ionic/angular';
 import { TextPage } from '../text/text.page';
@@ -32,13 +33,105 @@ export class VoicePage implements OnInit {
 
   start() {
 
+
 this.speechRecognition.startListening()
 .subscribe(
   (matches: Array<string>) =>{
     console.log(matches);
     this.words = matches[0];
-    if (this.words == "text"){
-      this.router.navigate(['/text'])
+    this.vWord = this.words
+    if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else if (this.words.toLowerCase() == "babae"){
+      const gifContainer = document.getElementById('gifContainer');
+      gifContainer!.innerHTML = '<img src="./assets/babae.gif" alt="Babae GIF">';
+    } else {
+      this.vWord = "Can you please repeat? I didn't hear anything."
     }
     
   }

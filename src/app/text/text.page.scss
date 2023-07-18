@@ -5,13 +5,12 @@
 
 .items {
     --ion-item-background : #ffffff;
-    border-radius: 12px;
+    border-radius: 10px;
     color: #000000;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 15px;
 }
-
 .lbl{
     font-family: "Now";
     font-weight: bold;
@@ -26,13 +25,16 @@
 .search {
     --ion-background: white;
     color:black;
+    width: 300px;
+}
+.ref {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px ;
+    color: white;
 }
 
-ion-col {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
+
 
 .back{
     margin-top: 15px;
